@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://code.jquery.com/jquery.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -8,48 +9,65 @@
   <title>Necter Collecter</title>
 </head>
 <body>
+    <script type="text/javascript" src=".\assets\javascript\game.js"></script>
   <h6></h6>
   </div>
-
-  <div 
-    class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+  <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
     <div id="crystal">
         <h1 class="lead" id="content">Crystal Collector</h1>
       </div>
       <div class="lead">
           <li>When you click a crystal, it will add a specific amount of points to the player's total score.</li>
           <li>You win if their total score matches the random number from the beginning of the game.</li>
-      </div>
+        </div>
+
+        <div class="container-fluid" id="cuw">
+            <div class="row">
+              <div class="col-sm" id="compNum">
+                Computer Score:
+              </div>
+              <div class="col-sm" id="userNum">
+                Player Score:
+              </div>
+              <div class="col-sm" id="wins">
+                Wins:
+              </div>
+              <div class="col-sm" id="losses">
+                  Losses:
+              </div>
+            </div>
+          </div>
+    
     <div class="card-deck mb-3 text-center">
         <div class="card mb-4 shadow-sm">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Crystal 1</h4>
+            <h4 class="my-0 font-weight-normal">Yellow Bam</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">Gem <small class="text-muted"> 13 </small></h1>
+              <img src="assets/images/crystal-1.jpg" class="responsive">
+            <button type="button" class="btn btn-lg btn-block btn-primary">Beep</button>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Super Ice</h4>
+          </div>
+          <div class="card-body">
+              <img src="assets/images/crystal-2.jpg" class="responsive">
             <button type="button" class="btn btn-lg btn-block btn-primary">Boop</button>
           </div>
         </div>
         <div class="card mb-4 shadow-sm">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Crystal 2</h4>
+            <h4 class="my-0 font-weight-normal">L.A. Glass</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">Gem <small class="text-muted">15</small></h1>
-            <button type="button" class="btn btn-lg btn-block btn-primary">Boop</button>
-          </div>
-        </div>
-        <div class="card mb-4 shadow-sm">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Crystal 3</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">Gem <small class="text-muted">20</small></h1>
+              <img src="assets/images/crystal-3.jpg" class="responsive">
             <button type="button" class="btn btn-lg btn-block btn-primary">Baap</button>
           </div>
         </div>
       </div>
-  </div>
+  
   
 </body>
 </html>
