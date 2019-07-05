@@ -1,6 +1,7 @@
+
 .jumbotron {
   width: 90%;
-  margin-left: 50px;
+  margin: 50px;
 }
 .card-body {
   color: black;
@@ -15,10 +16,14 @@
   color: aliceblue;
   margin-bottom: 50px;
 }
-#crystal {
-  padding-top: 30px;
-  font-size: 24px;
+#content{
+  margin-bottom: 30px;
+}
+h6 {
+  margin: 30px;
 }
 #content{
-  margin-left: 15%;
+  font-size: 58px;
+  margin-bottom: 20px;
+  margin-top: -20px;
 }
