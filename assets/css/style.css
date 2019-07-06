@@ -15,9 +15,18 @@
   text-align: center;
   color: aliceblue;
   margin-bottom: 10px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 2px;
 }
 #content{
   margin-bottom: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 3px;
+  color: rgb(245, 78, 181);
+}
+h4 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 3px;
 }
 h6 {
   margin: 30px;
@@ -62,4 +71,19 @@ img {
 .responsive {
   max-width: 100%;
   height: auto;
+}
+#baap{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 5px;
+  color: black;
+}
+#boop{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 5px;
+  color: black;
+}
+#beep{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 5px;
+  color: black;
 }
