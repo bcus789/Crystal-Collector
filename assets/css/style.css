@@ -14,9 +14,10 @@
 .lead {
   text-align: center;
   color: aliceblue;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   letter-spacing: 2px;
+ 
 }
 #content{
   margin-bottom: 30px;
@@ -42,31 +43,32 @@ img {
   margin-bottom: 20px;
 
 }
-.container{
-  background-color: rgb(77, 71, 64);
+.container-fluid{
+  margin-top: 80px;
 }
 #cuw {
   margin:20px;
   margin-left:-2px;
+  font-size: 20px;
 }
 #compNum {
   margin:5px;
-  background-color: rgb(71, 194, 143);
+  background-color: rgb(55, 242, 255);
 }
 
 #userNum {
   margin: 5px;
-  background-color: rgb(71, 194, 143);
+  background-color: rgb(55, 242, 255);
 }
 
 #wins {
   margin:5px;
-  background-color: rgb(71, 194, 143);
+  background-color: rgb(55, 242, 255);
 }
 
 #losses {
   margin:5px;
-  background-color:rgb(71, 194, 143);
+  background-color:rgb(55, 242, 255);
 }
 .responsive {
   max-width: 100%;
