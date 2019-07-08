@@ -11,3 +11,10 @@ $(document).ready(function() {
   }
 console.log(compNum)
 })
+
+function newGame() {
+  userNum = 0;
+  crystals = randomRockValue();
+  compNum = randomNumGen();
+  $("#compNum").text(compNum);
+}

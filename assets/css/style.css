@@ -53,22 +53,22 @@ img {
 }
 #compNum {
   margin:5px;
-  background-color: rgb(55, 242, 255);
+  background-color: rgb(55, 255, 172);
 }
 
 #userNum {
   margin: 5px;
-  background-color: rgb(55, 242, 255);
+  background-color: rgb(55, 255, 172);
 }
 
 #wins {
   margin:5px;
-  background-color: rgb(55, 242, 255);
+  background-color: rgb(55, 255, 172);
 }
 
 #losses {
   margin:5px;
-  background-color:rgb(55, 242, 255);
+  background-color:rgb(55, 255, 172);
 }
 .responsive {
   max-width: 100%;
