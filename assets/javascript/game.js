@@ -6,15 +6,23 @@ $(document).ready(function() {
   var compNum = randomNum();
   var crystals;
 
-  function randomNum() {
-    return Math.floor(Math.random() * 102) + 19;
-  }
-console.log(compNum)
-})
-
 function newGame() {
   userNum = 0;
   crystals = randomRockValue();
-  compNum = randomNumGen();
+  compNum = randomNum();
   $("#compNum").text(compNum);
 }
+
+function randomNum() {
+  return Math.floor(Math.random() * 102) + 19;
+}
+console.log(compNum)
+})
+
+function crystalNums() {
+  return {
+    YellowBam: Math.floor(Math.random() * 12) + 1,
+    SuperIce: Math.floor(Math.random() * 12) + 1,
+    LaGlass: Math.floor(Math.random() * 12) + 1
+    }
+  }
