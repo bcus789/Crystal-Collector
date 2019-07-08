@@ -1,4 +1,3 @@
-
 .jumbotron {
   width: 90%;
   margin: 50px;
@@ -52,23 +51,35 @@ img {
   font-size: 20px;
 }
 #compNum {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 3px;
   margin:5px;
-  background-color: rgb(55, 255, 172);
+  background-color: rgb(55, 255, 172, 0.5);
+  text-align: center;
 }
 
 #userNum {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 3px;
   margin: 5px;
-  background-color: rgb(55, 255, 172);
+  background-color: rgb(55, 255, 172, 0.5);
+  text-align: center;
 }
 
 #wins {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 3px;
   margin:5px;
-  background-color: rgb(55, 255, 172);
+  background-color: rgb(55, 255, 172, 0.5);
+  text-align: center;
 }
 
 #losses {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 3px;
   margin:5px;
-  background-color:rgb(55, 255, 172);
+  background-color:rgb(55, 255, 172, 0.5);
+  text-align: center;
 }
 .responsive {
   max-width: 100%;
@@ -88,4 +99,7 @@ img {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   letter-spacing: 5px;
   color: black;
+}
+.card-body{
+  background-color: rgb(211, 224, 236, 0.8);
 }
