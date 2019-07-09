@@ -9,8 +9,10 @@ $(document).ready(function() {
   //new game state
 function newGame() {
   userNum = 0;
-  crystals = crystalNums();
   compNum = randomNum();
+  let yellowBam = Math.floor(Math.random() * 12) + 1
+  let superIce = Math.floor(Math.random() * 12) + 1
+  let laGlass = Math.floor(Math.random() * 12) + 1
 }
 
 //machine number picker
@@ -25,37 +27,10 @@ $("#losses").append($("<p>").text(losses));
 })
 
 // sets random rock values
-function crystalNums() {
-  return {
-    YellowBam: {
-      value: Math.floor(Math.random() * 12) + 1},
-    SuperIce: {
-      value: Math.floor(Math.random() * 12) + 1},
-    LaGlass: {
-      value: Math.floor(Math.random() * 12) + 1},
-    }
-  }
-  console.log(Object.keys(crystalNums));
-
-  function currentNum() {
-  userNum = userNum + crystals.value;
-  }
-  function displayCurrentNum() {
-    $("#userNum").append($("<p>").text(userNum));
-
-    setGame();
-
-    $("#beep").on("click", function(event) {
-      currentNum($(this))
-      displayCurrentNum();}
-    $("#boop").on("click", function(event) {
-      currentNum($(this))
-      displayCurrentNum();}
-    $("#baap").on("click", function(event) {
-      currentNum($(this))
-      displayCurrentNum();}
-    
-  
+   let yellowBam = Math.floor(Math.random() * 12) + 1
+   let superIce = Math.floor(Math.random() * 12) + 1
+   let laGlass = Math.floor(Math.random() * 12) + 1
+console.log(yellowBam)
 
   // win/loss state
   if (userNum === compNum) {
@@ -66,3 +41,4 @@ function crystalNums() {
     losses++;
     newGame();
   }
+  
