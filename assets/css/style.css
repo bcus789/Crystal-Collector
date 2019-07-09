@@ -1,0 +1,105 @@
+.jumbotron {
+  width: 90%;
+  margin: 50px;
+}
+.card-body {
+  color: black;
+}
+
+.card-header {
+  color: black;
+}
+
+.lead {
+  text-align: center;
+  color: aliceblue;
+  margin-bottom: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 2px;
+ 
+}
+#content{
+  margin-bottom: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 3px;
+  color: rgb(245, 78, 181);
+}
+h4 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 3px;
+}
+h6 {
+  margin: 30px;
+}
+#content{
+  font-size: 58px;
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+
+}
+.container-fluid{
+  margin-top: 80px;
+}
+#cuw {
+  margin:20px;
+  margin-left:-2px;
+  font-size: 20px;
+}
+#compNum {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 3px;
+  margin:5px;
+  background-color: rgb(55, 255, 172, 0.5);
+  text-align: center;
+}
+
+#userNum {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 3px;
+  margin: 5px;
+  background-color: rgb(55, 255, 172, 0.5);
+  text-align: center;
+}
+
+#wins {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 3px;
+  margin:5px;
+  background-color: rgb(55, 255, 172, 0.5);
+  text-align: center;
+}
+
+#losses {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 3px;
+  margin:5px;
+  background-color:rgb(55, 255, 172, 0.5);
+  text-align: center;
+}
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+#baap{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 5px;
+  color: black;
+}
+#boop{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 5px;
+  color: black;
+}
+#beep{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 5px;
+  color: black;
+}
+.card-body{
+  background-color: rgb(211, 224, 236, 0.8);
+}
