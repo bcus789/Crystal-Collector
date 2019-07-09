@@ -4,17 +4,15 @@ $(document).ready(function() {
   var losses = 0;
   var userNum = 0;
   var compNum = randomNum();
-  let yellowBam = Math.floor(Math.random() * 12) + 1;
-  let superIce = Math.floor(Math.random() * 12) + 1;
-  let laGlass = Math.floor(Math.random() * 12) + 1;
+ 
 
   //new game state
 function newGame() {
   userNum = 0;
   compNum = randomNum();
-  let yellowBam = Math.floor(Math.random() * 12) + 1
-  let superIce = Math.floor(Math.random() * 12) + 1
-  let laGlass = Math.floor(Math.random() * 12) + 1
+  var yellowBam = Math.floor(Math.random() * 12) + 1
+  var superIce = Math.floor(Math.random() * 12) + 1
+  var laGlass = Math.floor(Math.random() * 12) + 1
 }
 
 //machine number picker
@@ -34,15 +32,15 @@ let yellowBam = Math.floor(Math.random() * 12) + 1
 let superIce = Math.floor(Math.random() * 12) + 1
 let laGlass = Math.floor(Math.random() * 12) + 1
 
-$("#beep").on ('click', function(){
+$("#beep").on ('click', function(e){
   userNum = userNum + yellowBam
   $('#userNum').text(userTotal);})
 
-$("#boop").on ('click', function(){
+$("#boop").on ('click', function(e){
   userNum = userNum + yellowBam
   $('#userNum').text(userTotal);})
 
-$("#baap").on ('click', function(){
+$("#baap").on ('click', function(e){
   userNum = userNum + yellowBam
   $('#userNum').text(userTotal);})
 
