@@ -27,12 +27,35 @@ $("#losses").append($("<p>").text(losses));
 // sets random rock values
 function crystalNums() {
   return {
-    YellowBam: Math.floor(Math.random() * 12) + 1,
-    SuperIce: Math.floor(Math.random() * 12) + 1,
-    LaGlass: Math.floor(Math.random() * 12) + 1
+    YellowBam: {
+      value: Math.floor(Math.random() * 12) + 1},
+    SuperIce: {
+      value: Math.floor(Math.random() * 12) + 1},
+    LaGlass: {
+      value: Math.floor(Math.random() * 12) + 1},
     }
   }
+  console.log(Object.keys(crystalNums));
 
+  function currentNum() {
+  userNum = userNum + crystals.value;
+  }
+  function displayCurrentNum() {
+    $("#userNum").append($("<p>").text(userNum));
+
+    setGame();
+
+    $("#beep").on("click", function(event) {
+      currentNum($(this))
+      displayCurrentNum();}
+    $("#boop").on("click", function(event) {
+      currentNum($(this))
+      displayCurrentNum();}
+    $("#baap").on("click", function(event) {
+      currentNum($(this))
+      displayCurrentNum();}
+    
+  
 
   // win/loss state
   if (userNum === compNum) {
