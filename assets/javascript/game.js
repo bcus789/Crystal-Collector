@@ -4,7 +4,9 @@ $(document).ready(function() {
   var losses = 0;
   var userNum = 0;
   var compNum = randomNum();
-  var rocks;
+  let yellowBam = Math.floor(Math.random() * 12) + 1;
+  let superIce = Math.floor(Math.random() * 12) + 1;
+  let laGlass = Math.floor(Math.random() * 12) + 1;
 
   //new game state
 function newGame() {
@@ -26,19 +28,32 @@ $("#wins").append($("<p>").text(wins));
 $("#losses").append($("<p>").text(losses));
 })
 
-// sets random rock values
-   let yellowBam = Math.floor(Math.random() * 12) + 1
-   let superIce = Math.floor(Math.random() * 12) + 1
-   let laGlass = Math.floor(Math.random() * 12) + 1
-console.log(yellowBam)
 
-  // win/loss state
-  if (userNum === compNum) {
-    wins++;
-    newGame();
-  }
-  else if (userNum > compNum) {
-    losses++;
-    newGame();
-  }
-  
+// sets random rock values
+let yellowBam = Math.floor(Math.random() * 12) + 1
+let superIce = Math.floor(Math.random() * 12) + 1
+let laGlass = Math.floor(Math.random() * 12) + 1
+
+$("#beep").on ('click', function(){
+  userNum = userNum + yellowBam
+  $('#userNum').text(userTotal);})
+
+$("#boop").on ('click', function(){
+  userNum = userNum + yellowBam
+  $('#userNum').text(userTotal);})
+
+$("#baap").on ('click', function(){
+  userNum = userNum + yellowBam
+  $('#userNum').text(userTotal);})
+
+   // win/loss state
+ if (userNum === compNum) {
+  wins++;
+  newGame();
+ }
+ else if (userNum > compNum) {
+  losses++;
+  newGame();
+ }
+ 
+ 
