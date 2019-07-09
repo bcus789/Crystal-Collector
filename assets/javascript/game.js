@@ -24,6 +24,7 @@ console.log(compNum)
 $("#compNum").append($("<p>").text(compNum));
 $("#wins").append($("<p>").text(wins));
 $("#losses").append($("<p>").text(losses));
+$("#userNum").append($("<p>").text(userNum));
 })
 
 
