@@ -23,28 +23,36 @@ function randomNum() {
 $("#beep").on ('click', function(e){
   console.log(userNum)
   userNum = userNum + yellowBam
-  $('#userNum').text(userNum);})
+  $('#userNum').text(userNum);
+  winState()
+})
 
 $("#boop").on ('click', function(e){
   userNum = userNum + superIce
-  $('#userNum').text(userNum);})
+  $('#userNum').text(userNum);
+  winState()
+})
 
 $("#baap").on ('click', function(e){
   userNum = userNum + laGlass
-  $('#userNum').text(userNum);})
-
+  $('#userNum').text(userNum);
   winState()
+})
 
+  
   function winState(){
   if (userNum === compNum) {
-    wins++;
+    wins += 1
+    console.log('win')
     newGame();
    }
-   else if (userNum > compNum) {
+  else if (userNum > compNum) {
     losses++;
+    console.log('loss')
     newGame();
-   }
   }
+  }
+
    
 console.log(compNum)
 $("#compNum").append($("<p>").text(compNum));
