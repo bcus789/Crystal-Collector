@@ -15,10 +15,19 @@ function newGame() {
   var laGlass = Math.floor(Math.random() * 12) + 1
 }
 
+let yellowBam = Math.floor(Math.random() * 12) + 1
+let superIce = Math.floor(Math.random() * 12) + 1
+let laGlass = Math.floor(Math.random() * 12) + 1
+
 //machine number picker
 function randomNum() {
   return Math.floor(Math.random() * 102) + 19;
 }
+$("#compNum").append($("<h5>").text(compNum));
+$("#wins").html($("<h7>").text("wins: " + wins));
+$("#losses").html($("<h8>").text("losses: " + losses));
+$("#userNum").append($("<h6>").text(userNum));
+
 
 $("#beep").on ('click', function(e){
   console.log(userNum)
@@ -42,32 +51,22 @@ $("#baap").on ('click', function(e){
   
   function winState(){
   if (userNum === compNum) {
-    wins += 1
-    console.log('win')
+    wins ++
+    $("#wins").append($("<p>").text(wins));
+    alert("you win! But also you are still addicted to meth")
     newGame();
    }
   else if (userNum > compNum) {
     losses++;
-    console.log('loss')
+    alert("you lose you worthless piece of trash")
+    $("#losses").append($("<h8>").text(losses));
     newGame();
   }
   }
 
    
-console.log(compNum)
-$("#compNum").append($("<p>").text(compNum));
-$("#wins").append($("<p>").text(wins));
-$("#losses").append($("<p>").text(losses));
-$("#userNum").append($("<p>").text(userNum));
+
 })
 
-
-// sets random rock values
-let yellowBam = Math.floor(Math.random() * 12) + 1
-let superIce = Math.floor(Math.random() * 12) + 1
-let laGlass = Math.floor(Math.random() * 12) + 1
-
-   // win/loss state
-   
 
  
